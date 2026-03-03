@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Monthly Newsletter</title>
+
+<style>
+
+/* ===== BASE ===== */
+
+body{
+    margin:0;
+    background:#e5e5e5;
+    display:flex;
+    justify-content:center;
+    padding:50px 0;
+    font-family: Georgia, serif;
+}
+
+/* ===== PAGE ===== */
+
+.page{
+    width:794px; /* exact A4 width at 96dpi */
+    aspect-ratio:210/297;
+    background:white;
+    padding:70px;
+    box-sizing:border-box;
+}
+
+/* ===== HEADER ===== */
+
+.header{
+    text-align:center;
+    border-bottom:2px solid #000;
+    padding-bottom:5px;
+    margin-bottom:5px;
+}
+
+.header img{
+    width:110px;
+    display:block;
+    margin:0 auto 5px;
+}
+
+h1{
+    margin:0;
+    font-size:34px;
+}
+
+h2{
+    margin:10px 0 10px 0;
+    font-size:22px;
+    text-align:center;
+}
+
+/* ===== GRID ===== */
+
+.grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:35px;
+}
+
+/* ===== TEXT CONTROL ===== */
+
+/* Sermon text */
+.main p{
+    font-size:14px;
+    line-height:1.6;
+    text-align:justify;
+    margin-bottom:5px;
+}
+
+/* Sidebar text */
+.side p{
+    font-size:10px;
+    line-height:1.5;
+    text-align:left;
+    margin-bottom:5px;
+}
+
+/* ===== PRINT ===== */
+
+@page{
+    size:A4;
+    margin:20mm;   /* physical page margin */
+}
+
+@media print{
+    body{
+        background:white;
+        padding:0;
+    }
+
+    .page{
+        width:auto;      /* let page respect @page margins */
+        height:auto;
+        margin:0;
+        padding:0;       /* remove double padding */
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="header">
+    <img src="logo.jpg" alt="Logo">
+    <h1>Ṭhalâite Ṭhian</h1>
+    <p>Monthly Newsletter – March 2026</p>
+</div>
+
+<div class="grid">
+
+<div class="main">
+
+<h2>PATHIANIN MIN HRIATCHIANZIA</h2>
+<p><em>– Lt. Col. Lalliankunga</em></p>
+
+<p>Pathian hian a thilsiam leh a enkawlna hnuaia awmte hi min ve en ngunin min va hre chiang dawn teh lul em!</p>
+<p>Matthew 10:29-33 Chawngzawng pahnih dar tangka pakhatah an hralh thin lo vem ni Nimahsela, an zinga pakhat mah in Pa lovin leiah a tla lo vang.</p>
+<p>Mihring chauh ni lovin sava te tak te pawh a ngaihsak a, an chetzia tin reng pawh a hriatpui a ni.</p>
+<p>In samzaite lam pawh hi chhiar vek a ni asin Chuvangin, hlau suh u; chawngzawng tam tak aiin in hlu zawk a ni.</p>
+<p>Nitina i chenpui, i hmangaih leh ngainat ber; mi pakhat chauh pawh ni se, a samzai neih zat i hriat sak em?</p>
+<p>Chuvangin he thu hi vawng reng ang u: "Chutichuan, mite hmaa mi tan apiang, ka Pa vana mi hmaah ka tan ve ang."</p>
+
+</div>
+
+<div class="side">
+
+<h2>MARCH THLA HUN RUATNA</h2>
+<hr>
+
+<p><strong>01.03.2026</strong><br>
+Hruaitu: Tv. James Lalruatsanga<br>
+Tantu: Nl. Lalmuanpuii<br>  
+Bible: Tv. Billy Laldingliana<br>  
+Programme: Sharing  
+  </p>
+  <hr>
+
+<p><strong>08.03.2026</strong><br>
+Hruaitu: Tv. Elisha Lalhriatzuala<br>
+Tantu: Tv. Lalfamkima<br>
+Bible: Nl. Bliss Lalnunsiami<br>  
+Programme: OB Sermon</p>
+<hr>
+
+<p><strong>15.03.2026</strong><br>
+Hruaitu: Tv. Theophilus B Lalhmingthanga<br>
+Tantu: Nl. Dorothy Zothanpuii<br>  
+Bible: Tv. Lalzahawma<br>  
+Programme: Ka Hla Duhzawng</p>
+<hr>
+
+<p><strong>22.03.2026</strong><br>
+Hruaitu: Nl. C Lalremruati<br>
+Tantu: Nl. Elizabeth Vanlalmuanzuali<br>  
+Bible: Tv. B Lalhlimpuia<br>  
+Sermon: Chaplain Moses Vanlalnghaka Hnamte</p>
+<hr>
+
+<p><strong>29.03.2026</strong><br>
+Hruaitu: Tv. Joel TT Laldinpuia<br>
+Tantu: Tv. Galdinus Tc Nunga<br>  
+Bible: Emily Pulamte<br>  
+Programme: Zaipawl Hla Zir  </p>
+<hr>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
